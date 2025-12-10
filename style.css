@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", Regular;
+    font-family: "Hedvig", Regular;
+}
+
+:root{
+    --preto:#000000;
+    --branco:#ffffff;
+    --amarelo:#BF8C36;
+    --marrom:#8E4F23;
+    --bege:#C9B999;
+    --marrom2:#6C4B3B;
+}
+
+
+@font-face {
+    font-family: Merriweathear ;
+    src: url(./fonts/Merriweather/static/Merriweather_120pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hedvig ;
+    src: url(./fonts/Hedvig_Letters_Serif/static/HedvigLettersSerif_14pt-Regular.ttf);
+}
+
+
+body{
+    background-color: var(--);
+}
+
+header{
+    width: 100%;
+}
+
+header>div.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 157px;
+    /* background-color: rgb(213, 150, 255); */
+}
+
+.container-flex {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+#logo {
+    width: 155px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.links a {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--amarelo);
+    border-bottom: 1px solid var(--amarelo);
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao {
+    display: none;
+}
+
+#bannerprincipal {
+    width: 100%;
+    /* background-image: url(img/thayssa\ principal.jpg); */
+    object-fit: cover;
+    height: 1200px;
+}
+
+.sobre-nos {
+  text-align: center;        /* Centraliza o texto */
+  max-width: 700px;          /* Define uma largura confortável */
+  margin: 0 auto;            /* Centraliza a caixa inteira na página */
+  padding: 40px 20px;        /* Respiro interno */
+  font-family: "Georgia", serif;
+  line-height: 1.6;          /* Torna o texto mais agradável */
+}
+
+.sobre-nos p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+
+
