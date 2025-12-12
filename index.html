@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigo & Tradição</title>
 
-    <link rel="shortcut icon" href="img/image 1.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/Ativo 1.svg" type="image/x-icon">
 
-<!-- vincula o script do js ao HTML -->
+    <!-- vincula o script do js ao HTML -->
     <link rel="stylesheet" href="style.css">
 
-<!-- vincula o script do js ao HTML -->
+    <!-- vincula o script do js ao HTML -->
     <script src="script.js" defer></script>
 
 </head>
+
 <body>
     <main>
+        <div id="sombra"></div>
         <header>
-            <img src="./img/image 1.svg" alt="Logo da Trigo & Tradição">
+            <div class="container-flex">
+                <img src="./img/image 1.svg" alt="Logo da Trigo & Tradição">
 
-            
+
                 <nav class="links">
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <a href="#">Delivery</a>
-                <a href="#">Cursos</a>
-                <!-- <a href="#"></a> -->
-            </nav>
-             <input type="search">
-                <button id="menu_botao" type="button">
+                    <a href="#sobrenos">Sobre</a>
+                    <a href="#contati">Contato</a>
+                    <a href="#delivery">Delivery</a>
+                    <a href="#curso">Cursos</a>
+                    <!-- <a href="#"></a> -->
+                </nav>
+
+                <!-- Menu de Hamburguer-->
+                <button id="menu_botao" onclick="abreFechaMenu()">
                     <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <path
                             d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
@@ -39,29 +44,286 @@
                             d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
                     </svg>
                 </button>
+
+
+                <!-- <input type="search">
+                <button id="menu_botao" type="button">
+                    <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg>
+
+                    <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                    </svg>
+                </button> -->
             </div>
 
 
             <img id="bannerprincipal" src="./img/IMG_2034 1.svg" alt="Foto da Thayssa comendo pão">
-        
+
         </header>
 
-<section class="sobre-nos">
-         <h1>Sobre Nós</h1>
-            <p>Uma padaria de fermentação natural que preza pela tradição e o
+        <section id="sobrenos" class="sobre-nos">
+            <h1>Sobre Nós</h1>
+            <h2>Uma padaria de fermentação natural que preza pela tradição e o
                 sabor verdadeiro do pão artesanal.
                 Fundada por um casal, Juca e a Maria que largou a vida
                 corporativa para abrir um negócio e uma escola de panificação, ela é conhecida
-                na vizinhança pelo cheiro de pão fresco que sai pela manhã.</p>
+                na vizinhança pelo cheiro de pão fresco que sai pela manhã.</h2>
 
         </section>
 
-        <section id="imagens">
-            <img src="./img/IMG_2022 2.jpg" alt="thaysa comendo pao">
-<img src="./img/IMG_2092 2.jpg" alt="thaysa comendo pao">
-<img src="./img/IMG_1941 2.jpg" alt="thaysa comendo pao">
-<img src="./img/IMG_1938 2.jpg" alt="com a mao na massa">
+        <section class="ilustracao">
+            <img id="thayssapao" src="./img/thayssapao.svg" alt="thaysa comendo pao">
+            <img id="paotabua" src="./img/IMG_2092 2.svg" alt="pao na tabua">
+            <img id="massa" src="./img/IMG_1941 2.svg" alt="massa com farinha">
+            <img id="maomassa" src="./img/IMG_1938 2.svg" alt="com a mao na massa">
         </section>
-    </main>
+        <div class="faixa"></div>
+        <!-- <img id="faixa" src="./img/Rectangle 44.svg" alt="retangulo"> -->
+
+        <section class="cardapio"></section>
+        <h1>Cardápio</h1>
+
+        <h2>Salgados</h2>
+
+        <section id="cardapiosalgado">
+
+            <div class="salgado">
+
+
+
+                <img src="./img/dc71e8a7045f3745f84070f9a9241819 1.svg" alt="paes">
+                <h3>PÃES</h3>
+            </div>
+
+            <div class="salgado">
+                <img src="./img/e1c63a1256e2a256b1fb734ce8c691a5 1.svg" alt="pao de queijo">
+                <h3>PÃO DE QUEIJO</h3>
+            </div>
+
+            <div class="salgado">
+                <div class="croissaint"><img src="./img/2f769dc1a10b4212a9bbeea367bf45c9 1.svg" alt="croissaint"></div>
+                <h3>CROISSAINT</h3>
+            </div>
+        </section>
+
+        <h2>Doces</h2>
+        <section id="cardapiodoce">
+
+
+
+            <div class="doce">
+
+                <img src="./img/35542921e98a59a31d1e51729043b947 1.svg" alt="bolo">
+                <h3>BOLOS</h3>
+            </div>
+
+            <div class="doce">
+                <img src="./img/4d02c158c5411590c4c87908be2d916b 1.svg" alt="pao hungaro">
+                <h3>PÃO HÚNGARO</h3>
+            </div>
+
+            <div class="doce">
+                <img src="./img/027aeae834d166c256acfeec7fa41c46 1.svg" alt="pritzel">
+                <div class="pritzel">
+                <h3>PRITZEL</h3></div>
+            </div>
+
+        </section>
+
+
+
+        <h2>Bebidas</h2>
+        <section id="cardapiobebidas">
+
+
+
+            <div class="bebida">
+                <img src="./img/1c0f9e89f074f931d2058396deddc1be 1.svg" alt="cha gelado">
+               <div class="cha gelado"> <h3>CHÁ GELADO</h3></div>
+            </div>
+
+            <div class="bebida">
+                <img src="./img/c1ba263e6a686b4a96d0a1472b3a9834 1.svg" alt="cafe">
+                <div class="cafe"><h3>CAFÉ</h3></div>
+            </div>
+
+            <div class="bebida">
+               <div class="suco"> <img src="./img/5c0559637331c65540c631e62b20fd38 1.svg" alt="suco"></div>
+                <h3>SUCOS</h3>
+            </div>
+
+        </section>
+
+        <div class="container">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <section id="delivery" class="delivery"></section>
+        <h1>Delivery</h1>
+
+        </section>
+
+        <div class="deliveryretangulo">
+
+
+            <div class="icons">
+                <div class="icon-box">
+                    <div class="bolsinha">
+                        <img src="./img/bag-heart 1.svg" alt="bolsinhaicone">
+                    </div>
+
+                    <p>Entregas refrigeradas</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="caminhao">
+                        <img src="./img/truck 1.svg" alt="caminhaoicone">
+                    </div>
+                    <p>Entregas de carro</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="alarme">
+                        <img src="./img/alarm 1.svg" alt="alarmeicone">
+                    </div>
+                    <p>Entregas agendadas</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Pedidos entregues em até 1h na própria região.</p>
+                <p>Pedidos em outras regiões em até 1 dia útil.</p>
+                <p>Pedidos agendados devem ser feitos com 1 dia de antecedência.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <h1>Temos também:</h1>
+        </div>
+
+        <section>
+
+            <div id="curso" class="titulo">
+                <p>CURSOS DE PANIFICAÇÃO</p>
+            </div>
+
+            <div class="cursoretangulo">
+
+                <div class="imagem">
+                    <img src="./img/IMG_2047 1.svg" alt="luana">
+
+                </div>
+                <div class="texto">
+                    <p>Aprenda as técnicas e os truques que só os padeiros experientes conhecem, desde a escolha dos
+                        melhores ingredientes até o ponto exato de fermentação e cozimento.</p>
+
+                    <p>As aulas são realizadas na cozinha da nossa padaria, um espaço pensado para você aprender em um
+                        ambiente prático, divertido e inspirador, com a nossa equipe de padeiros e confeiteiros
+                        dedicados.</p>
+
+                    <p><strong>SE VOCÊ É UM INICIANTE OU JÁ TEM ALGUMA EXPERIÊNCIA E QUER APRIMORAR SUA HABILIDADES,
+                            TEMOS O CURSO PERFEITO PARA VOCÊ!</strong></p>
+                </div>
+        </section>
+        <section class="cadastro">
+            <h1>Para saber mais:</h1>
+
+
+            <div class="btn-topo">
+                CLIQUE AQUI
+            </div>
+
+            <section class="container-form">
+                <h2>CADASTRE-SE</h2>
+
+                <form>
+                    <div class="campo">
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Nome">
+                    </div>
+
+                    <div class="campo">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Telefone:</label>
+                        <input type="text" placeholder="Telefone">
+                    </div>
+
+                    <div class="campo">
+                        <label>Comentários...</label>
+                        <textarea placeholder="Comentários..."></textarea>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="contato-section">
+
+                <div class="col-esquerda">
+
+                    <div id="contati" class="item">
+                        <img src="./img/email svg.svg" alt="email" class="icon">
+                        <p>trigoetradicao@gmail.com</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/horario svg.svg" alt="horário" class="icon">
+                        <p>
+                            De segunda a Sábado: das 06h as 22h<br>
+                            Aos Domingos: 06h as 14h
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/instagram 1.svg" alt="instagram" class="icon">
+                        <p>@trigoetradicao</p>
+                    </div>
+
+                </div>
+
+                <div class="col-direita">
+
+                    <img src="./img/image 2.svg" class="fachada" alt="Fachada da loja">
+
+                    <img src="./img/Captura de Tela 2025-11-14 às 13.49.49 1.svg" class="mapa" alt="Mapa localização">
+
+                    <div class="endereco">
+                        <img src="./img/loc icone.svg" class="icon-local" alt="Localização">
+                        <p>Rua Niterói 180 - São Caetano Do Sul</p>
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+
+
+
 </body>
+
+</html>
+
+</section>
+
+</div>
+
+</div>
+</div>
+
+</section>
+</main>
+</body>
+
 </html>
